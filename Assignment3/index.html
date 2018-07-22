@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+    <!-- Styles and Stylesheet -->
+      <link rel="stylesheet" href="CSS/stylesheet.css">
+      <style>
+        .card-cus-nav{
+            background-color: orangered;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            display: none;
+            }
+      </style>
+      
+    <!--Title -->    
+        <title>Cycling in SLC</title>
+  </head>
+    
+  <body>
+      
+  <!--Navigation Bar -->     
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light"> 
+      <a class="navbar-brand" href="#"><img src="Elements/Bike-logo-blur.png" alt="Bike logo" style="width:100px;border:0;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#JumboAbout">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id=nvarbardrop-HowTo data-toggle="dropdown">How to Cycle</a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="#JumboGear">Get the right gear</a>
+                <a class="dropdown-item" href="#JumboStreets">Find safe streets</a>
+                <a class="dropdown-item" href="#JumboRules">Learn to ride in traffic</a>
+                </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#playlist">Playlists</a>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+      
+  <!--Jumbotron / Intro Top of Home -->   
+    <div id="JumboIntro" class="jumbotron jumbotron-fluid">
+        <div class="container" style="padding-top: 50px" "margin-bottom: 375px">
+          <h1 class="display-3">How to Cycle SLC</h1>
+            <p id="LeadSpecial" class="lead">Get on your bikes and ride!</p>
+          <hr class="my-4">
+            <p style="text-align:left">Hi. I'm Chompo. I've been cycling in Salt Lake City for the past couple of years. </p>
+            <p style="text-align:left">Cycling isn't just a sport, and it's not just for athletes. It's a fantastic way to get to know a city, to see things up close that you might otherwise pass by. It's also an eco-friendly way to make short trips. (That will definitely help SLC's smog problem.) I love hopping on my bike for a quick trip to the store or to drop by a friend's house -- and I want to pass on a few tips.</p>
+            <p style="text-align:left">Granted, SLC is not as bike-friendly as some other cities and that can make a newbie feel nervous. <b>But with a few bits of simple (and cheap) gear, a basic knowledge of bike-friendly streets, and an understanding of how to ride in traffic, SLC can become your cycling city.</b></p>
+        </div>
+    </div>
+      
+ <!-- Carousel -->
+    <div id="carouselHomePage" class="carousel slide" data-ride="carousel">
+        
+    <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#carouselHomePage" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselHomePage" data-slide-to="1"></li>
+        <li data-target="#carouselHomePage" data-slide-to="2"></li>
+      </ul>   
+   
+    <!-- Slideshow with Captions-->
+       <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img class="d-block" src="Elements/Night-cycle1.jpg" alt="Cycling at night"> 
+              <div class="carousel-caption">
+                  <h3>Lights, Bell, Mirror</h3>
+                  <h6> Can drivers see this rider? It's dark and he's wearing black. </h6>
+              </div>                 
+          </div>
+          <div class="carousel-item">
+              <img class="d-block" src="Elements/Family-cycle1.jpg" alt="Family cycling">
+              <div class="carousel-caption">
+                  <h3>Bike-Friendly Streets</h3>
+                  <h6>How did this family choose their route? Can they find other streets that are kid-friendly?</h6>
+              </div>
+           </div>
+          <div class="carousel-item">
+              <img class="d-block" src="Elements/Traffic-cycle1.jpg" alt="Cycling in the city">
+              <div class="carousel-caption">
+                  <h3>Riding in Traffic </h3>
+                  <h6>Where's the best place for a cyclist to ride in traffic? Hint: It's not the sidewalk.</h6>
+              </div>              
+          </div>
+        </div>
+        
+    <!-- Prev/Next Controls -->
+        <a class="carousel-control-prev" href="#carouselHomePage" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+         </a>
+         <a class="carousel-control-next" href="#carouselHomePage" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+         </a>
+    </div>
+    
+ <!-- CARD DECK -->
+  <div id="CardContainer" class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card-deck">
+                   
+    <!-- Card 1 -->
+                  <div id="gearcard" class="card">
+                    <div class="card-header">
+                      <img class="card-img-top" src="Elements/Bike-light-BW2.png" alt="Bicycle light">
+                    </div>
+                    <div class="card-body">
+                      <div id="gearnav" class="card-body card-cus-nav">
+                      </div>
+                      <h5 class="card-title">Gear</h5>
+                      <p class="card-text">Get the right gear to make your ride safe and enjoyable.</p>
+                    </div>
+                  </div>
+    <!-- Card 2 -->                  
+                  <div id="streetcard" class="card">
+                    <div class="card-header">
+                       <img class="card-img-top" src="Elements/Bike-street-sm.png" opacity: 1.0; alt="People riding bikes along a waterway">
+                    </div>
+                    <div class="card-body">
+                      <div id="streetnav" class="card-body card-cus-nav">
+                      </div>
+                      <h5 class="card-title">Streets</h5>
+                      <p class="card-text">Find streets that are bike-friendly without lots of cars.</p>
+                    </div>
+                  </div>
+    <!-- Card 3 -->                    
+                  <div id="trafficcard" class="card">
+                    <div class="card-header">
+                       <img class="card-img-top" src="Elements/Cars.png" alt="Traffic jam">
+                    </div>
+                    <div class="card-body">
+                      <div id="trafficnav" class="card-body card-cus-nav">
+                      </div>
+                      <h5 class="card-title">Traffic</h5>
+                      <p class="card-text">Learn how to "take the lane," avoid collisions.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>  
+    </div>  
+      
+ <!--Jumbotron / Gear -->   
+    <div id="JumboGear" class="jumbotron jumbotron-fluid">
+        <div id="JumboSection" class="container">
+          <h1 class="display-4">Get the Right Gear</h1>
+            <p class="lead">Lights, bell, mirror</p>
+          <hr class="my-2">
+            <p style="text-align:left">Salt Lake City hasn't yet acquired a pervasive bicycle culture. (Or a pedestrian culture, for that matter.) Cars are used to having the roads to themselves, so do yourself a favor and make yourself <strong>visible</strong>. These items are inexpensive and just as important as a handlebar or tires. Seriously. Don't ride without them.</p>
+            <p class="more">more to come!</p>
+        </div>
+    </div>
+      
+ <!--Jumbotron / Streets -->   
+    <div id="JumboStreets" class="jumbotron jumbotron-fluid">
+        <div id="JumboSection" class="container">
+          <h1 class="display-4">Find Bike-Friendly Streets</h1>
+            <p class="lead">Avoid the cars</p>
+          <hr class="my-2">
+            <p style="text-align:left">Cycle around the Avenues neighborhood. It's hilly but the roads are not busy and the traffic is used to lots of cyclists. For a north-south route, use 600 East: it doesn't have much traffic and it's a bike lane. Check out Wasatch Boulevard. Take the trail over I-215 and continue south through Sugarhouse.</p>
+            <p style="text-align:left">Also check out Google maps and choose the 🚲 option -- it's pretty reliable.</p>
+            <p class="more">more to come!</p>
+        </div>
+    </div>      
+
+ <!--Jumbotron / Rules -->   
+    <div id="JumboRules" class="jumbotron jumbotron-fluid">
+        <div id="JumboSection" class="container">
+          <h1 class="display-4">Learn to Ride in Traffic</h1>
+            <p class="lead">It's a jungle out there</p>
+          <hr class="my-2">
+            <p style="text-align:left">Don't ride on the sidewalk. Don't ride close to parked cars (you may get doored). Watch out for cars pulling out from side streets and driveways -- even if you have the right-of-way. And most importantly: TAKE THE LANE. Drivers are used to seeing traffic in the middle of the lane. That's where you should be. The only exception is when there is a bike lane!</p>
+            <p class="more">more to come!</p>
+        </div>
+    </div>    
+
+ <!--Jumbotron / About -->   
+    <div id="JumboAbout" class="jumbotron jumbotron-fluid">
+        <div id="JumboSection" class="container">
+          <h1 class="display-4">About Me</h1>
+            <p class="lead">I want to ride my bicycle</p>
+          <hr class="my-2">
+            <p style="text-align:left">Washington, DC transplant. 20 years of cycling around the nation's capitol. Transplanting the bicycle culture to SLC, one pedal rotation at a time. </p>
+           <!--Video - Queen -->       
+            <iframe id="playlist" src="https://player.vimeo.com/video/210854333" width="500" height="400" frameborder="0"></iframe>
+            <p class="footnote"><a href="https://vimeo.com/210854333">primitive eXPeriments // Queen-Bicycle Race</a> from <a href="https://vimeo.com/bastienbrenot">Bastien BRENOT</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+    </div> 
+             
+      
+ <!-- Optional JavaScript -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- Link to the main.js sheet -->
+    <script src="JS/jquery.js"></script>     
+  </body>
+</html>
